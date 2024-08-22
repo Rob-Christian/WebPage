@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rob Christian Caduyac's Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            padding: 14px 20px;
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            display: none; /* Hide all sections by default */
+        }
+        .container.active {
+            display: block; /* Show the active section */
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 5px;
+        }
+        .personal-details, .work_experience, .research, .teaching, .professional_development, .research_outputs, .projects {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .about-container {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        .about-container img {
+            max-width: 200px;
+            width: 100%;
+            border-radius: 5px;
+        }
+        .about-text {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Rob Christian Caduyac</h1>
+        <p>Electrical Engineer | Researcher | Educator</p>
+    </header>
+
+    <nav>
+        <a href="#about" onclick="showSection('about')">About Me</a>
+        <a href="#work_experience" onclick="showSection('work_experience')">Work Experience</a>
+        <a href="#research" onclick="showSection('research')">Research Interests</a>
+        <a href="#teaching" onclick="showSection('teaching')">Adventures in Teaching</a>
+        <a href="#professional_development" onclick="showSection('professional_development')">Professional Development</a>
+        <a href="#research_outputs" onclick="showSection('research_outputs')">Research Outputs</a>
+        <a href="#projects" onclick="showSection('projects')">Personal Projects</a>
+    </nav>
+
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <img src="C:\Users\rmcad\webpage\profile_pic.jpg" alt="Rob Christian Caduyac">
+            <div class="about-text">
+                <p><strong>Name:</strong> Rob Christian Caduyac</p>
+                <p><strong>Email:</strong> rmcaduyac1@up.edu.ph</p>
+                <p><strong>Educational Background:</strong></p>
+                <ul>
+                    <li>M.Sc. in Electrical Engineering, University of the Philippines Diliman [2022 - present]</li>
+                    <li>B.Sc. in Electrical Engineering, University of the Philippines Los Baños [2015-2020]</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section id="work_experience" class="container">
+        <h2>Work Experience</h2>
+        <ol>
+            <li>
+                <div class="title"><strong>Instructor 6</strong></div>
+                <div class="details">
+                    <p>- August 2024 - present</p>
+                    <p>- Department of Electrical Engineering</p>
+                    <p>- University of the Philippines Los Baños</p>
+                </div>
+            </li>
+            <li>
+                <div class="title"><strong>Instructor 2</strong></div>
+                <div class="details">
+                    <p>- April 2021 - July 2024</p>
+                    <p>- Department of Electrical Engineering</p>
+                    <p>- University of the Philippines Los Baños</p>
+                </div>
+            </li>
+            <li>
+                <div class="title"><strong>Project Staff L2 / Study Leader</strong></div>
+                <div class="details">
+                    <p>- Development of CNN and RNN Topology for Impedance Spectroscopy Analysis</p>
+                    <p>- August 2022 - May 2023</p>
+                    <p>- Department of Electrical Engineering</p>
+                    <p>- University of the Philippines Los Baños</p>
+                    <p>- Funding Agency: DOST - PCIEERD</p>
+                </div>
+            </li>
+            <li>
+                <div class="title"><strong>Part Time Lecturer</strong></div>
+                <div class="details">
+                    <p>- May 2022 - July 2024</p>
+                    <p>- ACES Review Center</p>
+                    <p>- Teaches Electrical Engineering Board Problems</p>
+                </div>
+            </li>
+        </ol>
+    </section>
+    
+    <section id="research" class="container">
+        <h2>Research Interests</h2>
+        <p><strong>Topics:</strong></p>
+        <ul>
+            <li><strong>Artificial Intelligence</strong></li>
+            <li><strong>Control Systems</strong></li>
+            <li><strong>Robotics</strong></li>
+        </ul>
+        <p style="text-align: justify;">My research focuses mainly on artificial intelligence, control systems, robotics, and their intersection. In artificial intelligence, I am engaged in applying AI for different applications involving classification, regression, detection, and generation. My work in control systems focused on applying control algorithms to ensure stability, and robustness of the systems. Lastly, I am interested in intelligent robotic systems for autonomous decision making and precise control.</p>
+        <p style="text-align: justify;">If you are looking for a consultant/advisee, or even someone to talk with in the aforementioned research focus, do not hesitate to contact me through my email: rmcaduyac1@up.edu.ph</p>
+    </section>
+
+    <section id="teaching" class="container">
+        <h2>Adventures in Teaching</h2>
+        <!-- Content for Adventures in Teaching -->
+    </section>
+    
+    <section id="professional_development" class="container">
+        <h2>Professional Development</h2>
+        <h3>Course Certificates</h3>
+        <ol>
+            <li>
+                <div class="title"><strong>Applied Control Systems 1</strong></div>
+                <div class="details">
+                    <p>- January 2023</p>
+                    <p>- Udemy</p>
+                    <p>- <a href="https://drive.google.com/file/d/1jJQ8XV43I5MSlOL0wvNKU-YVmyXfJY4W/view?usp=sharing">Certificate</a></p>
+                </div>
+            </li>
+            <li>
+            <div class="title"><strong>Robotics: Computational Motion Planning</strong></div>
+            <div class="details">
+                <p>- July 2022</p>
+                <p>- Coursera - University of Pennysylvania</p>
+                <p>- <a href="https://drive.google.com/file/d/16FfjfpK0OheDFAWMD2nKpojTUjT4QQ1C/view?usp=sharing">Certificate</a></p>
+            </div>
+			</li>
+			<li>
+				<div class="title"><strong>Robotics: Aerial Robotics</strong></div>
+				<div class="details">
+					<p>- July 2022</p>
+					<p>- Coursera - University of Pennysylvania</p>
+					<p>- <a href="https://drive.google.com/file/d/1KrhE-w1gLh0NWUwh1_JwWIbCOr_mqBM_/view?usp=sharing">Certificate</a></p>
+				</div>
+			</li>
+			<li>
+				<div class="title"><strong>Fundamentals of Reinforcement Learning</strong></div>
+				<div class="details">
+					<p>- August 2021</p>
+					<p>- Coursera - University of Alberta</p>
+					<p>- <a href="https://drive.google.com/file/d/1FMZzf1H5IcZb5hf4nVO8JL-IzzJWmkbW/view?usp=sharing">Certificate</a></p>
+				</div>
+			</li>
+			<li>
+				<div class="title"><strong>Modern Robotics: Robot Kinematics</strong></div>
+				<div class="details">
+					<p>- August 2020</p>
+					<p>- Coursera - Northwestern University</p>
+					<p>- <a href="https://drive.google.com/file/d/1gIS7zNAF7Klh3KGajerFKyh7UIBm-uLq/view?usp=sharing">Certificate</a></p>
+				</div>
+			</li>
+			<li>
+				<div class="title"><strong>Modern Robotics: Foundations of Robot Motion</strong></div>
+				<div class="details">
+					<p>- July 2020</p>
+					<p>- Coursera - Northwestern University</p>
+					<p>- <a href="https://drive.google.com/file/d/1VB0YVoAgLd3uyqT4l_gbMGjZsKLQshT9/view?usp=sharing">Certificate</a></p>
+				</div>
+			</li>
+			<li>
+				<div class="title"><strong>Structuring Machine Learning Projects</strong></div>
+				<div class="details">
+					<p>- July 2020</p>
+					<p>- Coursera - DeepLearning.AI</p>
+					<p>- <a href="https://drive.google.com/file/d/1QpZbiFsXbY936jf5LvDHBdJIOR9JYb0X/view?usp=sharing">Certificate</a></p>
+				</div>
+			</li>
+			<li>
+				<div class="title"><strong>Improving Deep Neural Networks: Hyperparameter Tuning, Regularization, and Optimization</strong></div>
+				<div class="details">
+					<p>- July 2020</p>
+					<p>- Coursera - DeepLearning.AI</p>
+					<p>- <a href="https://drive.google.com/file/d/1vAEOdB43EqFk5a_jQDQ8djYkhkStSKYV/view?usp=sharing">Certificate</a></p>
+				</div>
+			</li>
+			<li>
+				<div class="title"><strong>Neural Networks and Deep Learning</strong></div>
+				<div class="details">
+					<p>- March 2020</p>
+					<p>- Coursera - DeepLearning.AI</p>
+					<p>- <a href="https://drive.google.com/file/d/1T6hCJm8B1XTYz4A_YBsnt9aQIPHW5gHs/view?usp=sharing">Certificate</a></p>
+				</div>
+			</li>
+        </ol>
+    </section>
+    
+    <section id="research_outputs" class="container">
+        <h2>Research Outputs</h2>
+        
+        <h3>Publications</h3>
+        <ol>
+            <li>
+                <strong>R.C.M. Caduyac</strong> and J.F.R. Chan, 
+                “Comparative Analysis of Water Potability Prediction Based on Classical Machine Learning Algorithms and Artificial Neural Networks,” 
+                in CRC Press eBooks, 2024, pp. 149–153.
+            </li>
+            <li>
+                A.D. Sta. Cruz, J. Osayan, L.R. Moreno, and <strong>R.C. Caduyac</strong>, 
+                “Performance of ArUco Detector in ArUco Marker Detection Using Non-GPS Drone,” 
+                in CRC Press eBooks, 2024, pp. 63–67.
+            </li>
+        </ol>
+        
+        <h3>Conference Presentations</h3>
+        <ol>
+            <li>
+                <strong>R.C.M. Caduyac</strong> and J.F.R. Chan, 
+                "Comparative Analysis of Water Potability Prediction Based on Classical Machine Learning Algorithms and Artificial Neural Networks," 
+                presented at the International Science, Technology, and Engineering Conference (ISTEC), 2022.
+            </li>
+            <li>
+                A.D. Sta. Cruz, J. Osayan, L.R. Moreno, and <strong>R.C. Caduyac</strong>, 
+                “Performance of ArUco Detector in ArUco Marker Detection Using Non-GPS Drone,” 
+                presented at the International Science, Technology, and Engineering Conference (ISTEC), 2022.
+            </li>
+            <li>
+                <strong>R.C.M. Caduyac</strong>, J.P.A. Ramoso, J.P. Arazas, and R.C.V. Tomas, 
+                "The Effects of Feature Selection on Material’s Equivalent Circuit Visualization through Principal Component Analysis," 
+                presented at the 2nd International Conference on Engineering and Agro-Industrial Technology (iCEAT), 2023.
+            </li>
+            <li>
+                <strong>R.C.M. Caduyac</strong>, J.P.A. Ramoso, J.P. Arazas, and R.C.V. Tomas, 
+                "Machine Learning-based Discrimination of Materials through Electrochemical Impedance Spectroscopy," 
+                presented at the 3rd International Conference on Engineering and Agro-Industrial Technology (iCEAT), 2024.
+            </li>
+        </ol>
+    </section>
+
+    
+    <section id="projects" class="container">
+        <h2>My Personal Projects</h2>
+        <h3>Blogs</h3>
+        <ol>
+            <li>
+                <a href="https://medium.com/@rmcaduyac1_30165/implementation-of-minigooglenet-e5b4cc50700b"><strong>Implementation of MiniGoogleNet</strong></a>
+                <p><strong>Brief Description:</strong> A mini-version of GoogleNet was implemented using Python and Torch through Google Collaboratory. This enables students and researchers to understand dimension compatibility of output relative to the operation used and input shape. Note that a brief background on how the inception model and CNN must be required before going here.</p>
+            </li>
+            <li>
+                <a href="https://medium.com/@rmcaduyac1_30165/implementation-of-dcgan-architecture-0541d020100b"><strong>Implementation of DCGAN Architecture</strong></a>
+                <p><strong>Brief Description:</strong> A DCGAN architecture was implemented using Python and Torch through Google Collaboratory. This enables students and researchers to apply the architecture for applications such as, but not limited to, data augmentation, fake image generation, etc.</p>
+            </li>
+        </ol>
+        
+    </section>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.container').forEach(function(section) {
+                section.classList.remove('active');
+            });
+            // Show the selected section
+            document.getElementById(sectionId).classList.add('active');
+        }
+
+        // Show the "About Me" section by default
+        document.addEventListener('DOMContentLoaded', function() {
+            showSection('about');
+        });
+    </script>
+
+</body>
+</html>
